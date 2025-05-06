@@ -6,7 +6,7 @@ import pytz
 import os
 
 # Constants
-local_tz = pytz.timezone("America/New_York")
+local_tz = pytz.timezone("Etc/GMT")
 
 # Load environment variables
 load_dotenv()
