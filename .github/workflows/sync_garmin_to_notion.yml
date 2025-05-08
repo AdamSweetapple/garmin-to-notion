@@ -42,11 +42,9 @@ jobs:
           NOTION_PR_DB_ID: ${{ secrets.NOTION_PR_DB_ID }}
           NOTION_STEPS_DB_ID: ${{ secrets.NOTION_STEPS_DB_ID }}
           NOTION_SLEEP_DB_ID: ${{ secrets.NOTION_SLEEP_DB_ID }}
-          NOTION_MFP_DATABASE_ID: ${{ secrets.NOTION_MFP_DATABASE_ID }}
           TZ: 'Etc/GMT'
         run: |
           python garmin-activities.py
           python personal-records.py
           python daily-steps.py
           python sleep-data.py
-          python nutrition.py
